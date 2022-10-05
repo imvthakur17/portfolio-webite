@@ -1,0 +1,96 @@
+*{
+    /* background-color: black; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* header section */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #0c0c0c;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#header #logo{
+    text-decoration: none;
+    color: rgb(7, 244, 248);
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.navbar{
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-end;
+}
+
+.navbar li{
+    list-style: none;
+    padding: 0 10px;
+    
+}
+
+.navbar li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(82, 176, 244);
+}
+
+.navbar li a:hover{
+    color: #f61e1e;
+}
+
+/* hero section */
+
+#hero{
+    background-image: url(images/intro/1.jpg);
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero h1{
+    font-size: 40px;
+    color: aqua;
+    padding: 15px;
+    font-weight: 900;
+}
+
+#hero h2{
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+#hero button{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+    margin: 10px;
+}
+
+#hero button:hover{
+    color: #0c0c0c;
+    background-color: #14b8ad;
+}
