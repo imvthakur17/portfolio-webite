@@ -3,6 +3,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #000;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+}
+
+.normal-btn{
+    color: #14b8ad;
+    background: transparent;
+    border: 1px solid #14b8ad;
+    font-size: 10px;
+    cursor: pointer;;
+    text-transform: uppercase;
+    font-weight: 700;
+    z-index: 999;
+    padding: 6px;
+    margin: 15px;
+    transition: 0.5s ease;
 }
  
 /* header section */
@@ -12,8 +52,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background-color: #0c0c0c;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.116);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.199);
     z-index: 999;
     position: sticky;
     top: 0;
@@ -65,6 +106,12 @@
     justify-content: center;
 }
 
+#hero h6{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+}
+
 #hero h1{
     font-size: 40px;
     color: aqua;
@@ -93,4 +140,248 @@
 #hero button:hover{
     color: #0c0c0c;
     background-color: #14b8ad;
+}
+
+/* .........about section.......... */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    position: relative;
+    align-items: center;
+}
+
+#about .heading{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+#about h1{
+    color: #14b8ad;
+    font-size: 50px;
+    
+}
+
+#about h1::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #14b8ad;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+}
+
+#about .about-container img{
+    height: 20em;
+    width: auto;
+    margin-right: 100px;
+    box-shadow: 0 5px 30px rgb(25, 187, 245);
+}
+
+#about .about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+#about .about-box{
+    margin: 20px;
+    padding: 20px;
+    width: 35em;
+    height: 12em;
+    background: rgba(255, 255, 255, 0.116);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.199);
+}
+
+#about .about-box p{
+    font-size: 18px;
+    color: #fff;
+}
+
+#banner{
+    background-image: url(images/parallax/1.jpg);
+    background-size: cover;
+    height: 30vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    position: relative;
+    margin-top: 70px;
+    padding: 20px;
+}
+
+#banner .banner-info{
+    /* height: 30vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.116);
+    backdrop-filter: blur(5px);
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center; */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* .......project-container....... */
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+#projects h1{
+    color: #14b8ad;
+    font-size: 40px;
+}
+
+#projects .project-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+#projects .project-container .sm-container{
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#projects .project-container .sm-container .image{
+    display: block;
+    width: 100%;
+    height: 14em;
+}
+
+#projects .project-container .sm-container .about-text{
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: 0.5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 20px 0;
+    bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects .project-container .sm-container:hover .about-text{
+    opacity: 1;
+}
+
+
+#projects .sm-container .normal-btn:hover{
+    color: #f1f1f1;
+    background-color: #14b8ad;
+}
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("images/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 20%;
+    background-color: #041b42;
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button{
+    background-color: #088178;    
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+footer h1{
+    color: #088178;
+}
+
+footer .contact-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .contact-info .details{
+    padding: 20px 8rem;
+}
+
+footer .contact-info .details h2{
+    color: rgb(236, 149, 236);
+}
+
+footer .contact-info .details p{
+    color: #f1f1f1;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+    color: aquamarine;
 }
